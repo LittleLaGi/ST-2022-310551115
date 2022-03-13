@@ -12,11 +12,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 public class PriorityQueueTest {
     static Stream<Arguments> streamProvider() {
         return Stream.of(
-                Arguments.of(new int[]{1, 5, 2}, new int[]{5, 2, 1}),
-                Arguments.of(new int[]{0, 4, 0, 9}, new int[]{9, 0, 4, 0}),
-                Arguments.of(new int[]{-1, -8, -2, -1}, new int[]{1, -2, -1, -1}),
-                Arguments.of(new int[]{5, 5, 5}, new int[]{5, 5 ,6}),
-                Arguments.of(new int[]{-3, 9, 0}, new int[]{-3, 0, 3})
+                Arguments.of(new int[]{1, 5, 2}, new int[]{1, 2, 5}),
+                Arguments.of(new int[]{0, 4, 0, 9}, new int[]{0, 0, 4, 9}),
+                Arguments.of(new int[]{-1, -8, -2, -1}, new int[]{-8, -2, -1, -1}),
+                Arguments.of(new int[]{5, 5, 5}, new int[]{5, 5 ,5}),
+                Arguments.of(new int[]{-3, 9, 0}, new int[]{-3, 0, 9})
         );
     }
 
